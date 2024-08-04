@@ -31,7 +31,7 @@ get_parameters() {
             description="No description available."
         fi
         
-        read -p "$param ($description):" value
+        read -p "$param ($description): " value
         export "$param"="$value"
     done
 
@@ -50,7 +50,7 @@ for dir in */ ; do
 done
 
 # Prompt the user to choose a utility
-read -p "Enter the number of the utility you want to use:" choice
+read -p "Enter the number of the utility you want to use: " choice
 
 # Check if the choice is valid
 if [ -z "${utils[$choice-1]}" ]; then
