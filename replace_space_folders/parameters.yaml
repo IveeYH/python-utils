@@ -1,0 +1,5 @@
+parameters:
+  folder_route:
+    description: An absolute route to the folder you want to remove the spaces
+  replace_char:
+    description: The default is an empty string, but you can provide any char to replace the spaces
